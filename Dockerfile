@@ -8,7 +8,7 @@ COPY .  .
 
 RUN apk update
 
-RUN apk add python3
+RUN apk add python3 py3-pip --no-cache
 
 RUN pip3 install -r requirement.txt
 
